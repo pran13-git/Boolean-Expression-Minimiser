@@ -2,7 +2,7 @@
 ## Introduction
 The Boolean Expression Minimizer is a Java application that automates the Quine-McCluskey method to simplify and minimize Boolean expressions. This method is a widely used technique in digital logic design and optimization. This mini-project aims to provide an easy way for inputting Boolean expressions and obtaining their simplified forms using the Quine-McCluskey algorithm.
 
-Features
+# Feature
 Input: Users can input Boolean expressions using standard logical operators (AND, OR, NOT) and variables.
 Quine-McCluskey Algorithm: The core of the project is the implementation of the Quine-McCluskey algorithm, which is used to find prime implicants and generate essential prime implicants to minimize the expressions.
 Simplification: The algorithm takes the input expression and reduces it to its simplest form, using the fewest possible terms.
