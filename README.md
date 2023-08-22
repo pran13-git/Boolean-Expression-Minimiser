@@ -9,9 +9,9 @@ The Boolean Expression Minimizer is a Java application that automates the Quine-
 **User Interface**: The project includes a simple graphical user interface (GUI) that allows users to input Boolean expressions, trigger the minimization process, and view the simplified output.<br/>
 
 ## How to Use
-Input Expression: Complie and run the Driver file and input your Boolean expression using standard logical operators and variable names. For example: (A AND B) OR (NOT C).<br/>
-Minimize: Click the "Minimize" button to initiate the Quine-McCluskey algorithm and perform the minimization process.<br/>
-View Result: The simplified Boolean expression will be displayed in the GUI once the minimization is complete.<br/>
+**Input Expression**: Complie and run the Driver file and input your Boolean expression using standard logical operators and variable names. For example: (A AND B) OR (NOT C).<br/>
+**Minimize**: After giving the input the Quine-McCluskey algorithm is initiated and thus performs the minimization process.<br/>
+**View Result**: The simplified Boolean expression will be displayed in the Terminal once the minimization is complete.<br/>
 
 ## Installation
 Clone Repository: Clone this repository to your local machine using git clone <repository-url>.<br/>
