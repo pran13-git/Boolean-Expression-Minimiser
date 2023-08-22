@@ -20,7 +20,8 @@ For example: AB + C'.<br/>
 #### Output Example:
 <img width="377" alt="image" src="https://github.com/pran13-git/Boolean-Expression-Minimiser/assets/72128521/4d07a813-7fe4-4f41-9708-2cc2c234f07d">
 
-The output flow is shown in 
+
+The entire output flow is shown in the file 'Boolean Expression Minimiser Output Flow'
 
 
 ## Installation
