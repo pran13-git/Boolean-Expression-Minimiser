@@ -6,7 +6,7 @@ The Boolean Expression Minimizer is a Java application that automates the Quine-
 **Input**: Users can input Boolean expressions using standard logical operators (AND, OR, NOT) along with custom variable names. <br/> <br/>
 **Quine-McCluskey Algorithm**: The core of the project is the implementation of the Quine-McCluskey algorithm, which is used to find prime implicants and generate essential prime implicants to minimize the expressions.<br/> <br/>
 **Simplification**: The algorithm takes the input expression and reduces it to its simplest form, using the fewest possible terms.<br/> <br/>
-**User Interface**: The project includes a simple graphical user interface (GUI) that allows users to input Boolean expressions, trigger the minimization process, and view the simplified output.<br/>
+**User Interface**: The project runs in any terminal that allows users to input Boolean expressions, triggers the minimization process and the simplified output is displayed!<br/>
 
 ## How to Use
 **Input Expression**: Complie and run the Driver file and input your Boolean expression using standard logical operators and variable names. For example: AB + C'.<br/>
