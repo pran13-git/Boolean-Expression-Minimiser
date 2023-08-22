@@ -20,6 +20,8 @@ For example: AB + C'.<br/>
 #### Output Example:
 <img width="377" alt="image" src="https://github.com/pran13-git/Boolean-Expression-Minimiser/assets/72128521/4d07a813-7fe4-4f41-9708-2cc2c234f07d">
 
+The output flow is shown in 
+
 
 ## Installation
 Clone Repository: Clone this repository to your local machine using git clone <repository-url>.<br/>
