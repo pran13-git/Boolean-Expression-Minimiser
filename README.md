@@ -9,7 +9,8 @@ The Boolean Expression Minimizer is a Java application that automates the Quine-
 **User Interface**: The project runs in any terminal that allows users to input Boolean expressions, triggers the minimization process and the simplified output is displayed!<br/>
 
 ## How to Use
-**Input Expression**: Complie and run the Driver file and input your Boolean expression using standard logical operators and variable names. For example: AB + C'.<br/>
+**Input Expression**: Complie and run the Driver file and input your Boolean expression using standard logical operators and variable names. <br/>
+For example: AB + C'.<br/>
 **Minimize**: After giving the inputs, the Quine-McCluskey algorithm is initiated and thus performs the minimization process.<br/>
 **View Result**: The simplified Boolean expression(terms) will be displayed in the Terminal once the minimization is complete.<br/>
 
