@@ -10,7 +10,6 @@ interface Error
 class ExcessMintermsException extends Exception implements Error 
 {
 	int n;
-	
 	ExcessMintermsException(int n)
 	{
 		this.n=n;	
@@ -70,21 +69,10 @@ class Driver
 	public static void printTallyMap( Map map, int numOfVar)
 	{
 		Map<Integer,List<String>> tallyMap = new HashMap<>();
-		Set<String> set=map.entrySet();
+		Set<String> set = map.entrySet();
 		System.out.println("\n=================================================================================================================");
 		
-		//System.out.println("\nSet of minterms:"+ set);
-		//System.out.println("\nMinterms in binary forms");
-		//System.out.println("\nMINTERMS IN BINARY: \n"+ set);
-		
-		/*for(String s : set)
-		{
-			System.out.println(s);
-		}
-		*/
-		//Set set2= new HashSet <String> ();
 		Iterator i = set.iterator();
-     		
      		char ch[];
       		int ctr, key;
 
@@ -92,21 +80,20 @@ class Driver
 	      	while(i.hasNext())
 	      	{
 			Map.Entry me = (Map.Entry)i.next();
-			ctr=0;
-			String s=(String)me.getValue();
+			ctr = 0;
+			String s = (String)me.getValue();
 			ch= s.toCharArray();
-			for( int j=0; j< ch.length; ++j)
-				if(ch[j]=='1')
+			for( int j = 0; j < ch.length; ++j)
+				if(ch[j] == '1')
 					ctr++;
-			key=ctr;
-			String value=s;
+			key = ctr;
+			String value = s;
 			if(tallyMap.containsKey(key))
 			{
 			    tallyMap.get(key).add(value);
 			} 
 			else 
 			{
-			
 			   List<String> list = new ArrayList<>();
 			   list.add(value);
 			   tallyMap.put(key, list);
@@ -175,10 +162,7 @@ class Driver
 			{
 				try
 				{
-					
-					
 					//System.out.println(a);
-					
 					if(inp>(Math.pow(2,numOfVar)-1))
 					{
 						throw new ExcessMintermsException(numOfVar);
@@ -186,7 +170,6 @@ class Driver
 					
 					else if(Collections.frequency(a, inp)==2)
 					{
-
 						throw new MintermExistsException();
 					}
 					
@@ -207,14 +190,12 @@ class Driver
 					System.out.print("Please check the input and enter minterm " + (i+1)+ " again:");
 					inp=sc2.nextInt();
 					a.set(i, inp);
-					
-					
 				}
 			}
 				
 		}
 		
-		ArrayList<Integer> d=new ArrayList<Integer> ((int)Math.pow(2,numOfVar));
+		ArrayList<Integer> d = new ArrayList<Integer> ((int)Math.pow(2,numOfVar));
 		
 		System.out.print("\n\nDo you want to enter Don't cares? (y/n):");
 		String choice=sc.next();
@@ -247,8 +228,6 @@ class Driver
 				{
 					try
 					{
-						
-						
 						//System.out.println(a);
 						
 						if(inp>(Math.pow(2,numOfVar)-1))
@@ -346,19 +325,7 @@ class Driver
 				
 			}
 		}
-	
-	
-		/*	System.out.println("\n=================================================================================================================");
-		//System.out.println("\nMinterms in binary forms");
-		System.out.println("MINTERMS IN BINARY:");
-		for(i=0;i<numOfTerms;i++)
-		{
-			System.out.print((i+1) + ") ");
-			for(j=0;j<numOfVar;j++)
-				System.out.print(mt[i][j]);
-			System.out.println();
-		}
-		*/
+		
 		//grouping stage
 		while(true)
 		{
@@ -422,23 +389,7 @@ class Driver
 			}
 			if(ctr==0)//if in a table there is no term carried forward then we will stop
 					break;//ctr 0 signifies that no elements are combined to move to next pass so process will terminate
-			/*
-			for(i=0;i<combined.length;i++)
-			{
-				if(combined[i][0]==-1)
-					break;
-				for(j=0;j<numOfVar;j++)
-				{
-					if(combined[i][j]==2)
-						System.out.print("_");
-					else
-						System.out.print(combined[i][j]);
-				}
-				System.out.println();
-			}
-			*/
-			//System.out.println("\n=================================================================================================================");
-			//the above will display the new table created in every pass*/
+			
 			for(i=0;i<combined.length;i++)
 				for(j=0;j<combined[i].length;j++)
 					mt[i][j]=combined[i][j];	
@@ -679,8 +630,6 @@ class Driver
         	
         System.out.println("\n=================================================================================================================");
         System.out.print("\n\nTHE RESULT:");
-        /*for(i=0;i<numOfVar;i++)
-        	System.out.print(var[i]+" ");*/
         System.out.println();
         System.out.println("The Final Simplified Expression: \n");
         if( numOfMin==0)
