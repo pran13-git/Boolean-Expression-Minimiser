@@ -14,9 +14,9 @@ Minimize: Click the "Minimize" button to initiate the Quine-McCluskey algorithm 
 View Result: The simplified Boolean expression will be displayed in the GUI once the minimization is complete.<br/>
 
 ## Installation
-Clone Repository: Clone this repository to your local machine using git clone <repository-url>.
-Compile: Navigate to the project directory and compile the Java source files using a Java compiler (e.g., javac Driver.java).
-Run: Run the compiled Java program using java BooleanMinimizer.
+Clone Repository: Clone this repository to your local machine using git clone <repository-url>.<br/>
+Compile: Navigate to the project directory and compile the Java source files using a Java compiler (e.g., javac Driver.java).<br/>
+Run: Run the compiled Java program using java BooleanMinimizer.<br/>
 
 ## Conclusion
 The Boolean Expression Minimizer using the Quine-McCluskey Method is a valuable tool for anyone working in digital logic design, circuit optimization, or Boolean algebra. It provides a convenient way to simplify complex Boolean expressions, leading to more efficient logic design than Karnaugh maps(K-map).
